@@ -1,0 +1,28 @@
+.portfolio {
+    margin: 5vh auto;
+    width: 90%;
+    text-align: center;
+}
+
+.container-images-portfolio {
+    width: 100%;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio-child {
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 150px;
+    flex-basis: 25%;
+}
+
+.portfolio-image {
+    width: 100%;
+}

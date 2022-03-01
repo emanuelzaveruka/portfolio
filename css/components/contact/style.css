@@ -1,4 +1,43 @@
 .contact {
-    width: 100%;
-    height: 100vh;
+    margin: 20vh auto;
+    width: 90%;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-main {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #121B24;
+}
+
+.subtitle-main {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 41px;
+    color: #121B24;
+}
+
+.separator-image {
+    margin-top: 41px;
+}
+
+.images-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-contact a {
+    background-color: #F5FAFF;
+    margin: 50px 10px 0px 10px
 }

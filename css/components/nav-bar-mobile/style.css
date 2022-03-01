@@ -3,25 +3,13 @@
     margin: 0;
     padding: 0;
     font-family: "Montseerat", sans-serif;
-    ;
+    background-color: #F5FAFF;
 }
 
 body {
     overflow-x: hidden;
     overflow-y: unset;
 }
-
-
-/*DESCARTAR CLASSE*/
-
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-
-/********************/
 
 
 /*NAV BAR*/
@@ -31,6 +19,7 @@ a {
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
+    background-color: #0F1C29;
 }
 
 a:hover {
@@ -41,7 +30,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     background-color: #0F1C29;
-    height: 8vh;
+    height: 56px;
 }
 
 .nav-list {
@@ -57,16 +46,19 @@ nav {
     align-items: center;
     justify-content: center;
     height: 56px;
+    background-color: #0F1C29;
 }
 
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    background-color: #0F1C29;
 }
 
 .mobile-menu {
     display: none;
     cursor: pointer;
+    background-color: #0F1C29;
 }
 
 .mobile-menu div {
@@ -87,12 +79,14 @@ nav {
     letter-spacing: 3px;
     margin-left: 32px;
     margin-right: 10px;
+    background-color: #0F1C29;
 }
 
 .nav-list-desk div {
     display: block;
     align-items: center;
     height: 56px;
+    background-color: #0F1C29;
 }
 
 
