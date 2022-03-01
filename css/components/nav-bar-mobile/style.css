@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montseerat", sans-serif;
+    ;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: unset;
+}
+
+
+/*DESCARTAR CLASSE*/
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+/********************/
+
+
+/*NAV BAR*/
+
+a {
+    color: #F5FAFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0F1C29;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    display: none;
+}
+
+.button-nav-bar {
+    width: 100%;
+    border-top: 1px solid #F5FAFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #F5FAFF;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.nav-list-desk {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-list-desk li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    margin-right: 10px;
+}
+
+.nav-list-desk div {
+    display: block;
+    align-items: center;
+    height: 56px;
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .nav-list {
+        z-index: 1;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100%;
+        background: #0F1C29;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-200%);
+        transition: transform 0.4s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .nav-list-desk div {
+        display: none;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .nav-list {
+        z-index: 1;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100%;
+        background: #0F1C29;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-200%);
+        transition: transform 0.4s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .button-desk {
+        display: block;
+    }
+    .nav-list-desk div {
+        display: none;
+    }
+}
+
+.nav-list.active {
+    transform: translateY(0%);
+    display: block;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/*******************************/
+
+main {
+    background-color: #F5FAFF;
+}
