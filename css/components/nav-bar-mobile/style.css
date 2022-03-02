@@ -11,20 +11,12 @@ body {
     background-color: #F5FAFF;
 }
 
+main {
+    background-color: #F5FAFF;
+}
+
 
 /*NAV BAR*/
-
-a {
-    color: #F5FAFF;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-    background-color: #0F1C29;
-}
-
-a:hover {
-    opacity: 0.7;
-}
 
 nav {
     display: flex;
@@ -55,6 +47,18 @@ nav {
     background-color: #0F1C29;
 }
 
+.nav-list a {
+    color: #F5FAFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: #0F1C29;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -69,24 +73,52 @@ nav {
     transition: 0.3s;
 }
 
+
+/**********************************/
+
+
+/**********NAV DESKTOP*************/
+
 .nav-list-desk {
     display: flex;
     list-style: none;
     justify-content: space-between;
-}
-
-.nav-list-desk li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-    margin-right: 10px;
-    background-color: #0F1C29;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24px 0 0;
 }
 
 .nav-list-desk div {
-    display: block;
+    display: flex;
     align-items: center;
-    height: 56px;
-    background-color: #0F1C29;
+    height: 26px;
+}
+
+.nav-list-desk li {
+    margin: 0 25px 0 25px;
+}
+
+.nav-list-desk a {
+    color: #F5FAFF;
+    text-decoration: none;
+}
+
+.nav-desk-contact {
+    width: 110.25px;
+    min-height: 34.85px;
+    border-radius: 30px;
+    background-color: #F5FAFF;
+}
+
+.nav-desk-contact a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: #F5FAFF;
+    color: #0F1C29;
+    text-decoration: none;
 }
 
 
@@ -94,6 +126,7 @@ nav {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .nav-list {
+        display: block;
         z-index: 1;
         position: absolute;
         top: 8vh;
@@ -107,7 +140,6 @@ nav {
     }
     .nav-list li {
         margin-left: 0;
-        opacity: 0;
     }
     .mobile-menu {
         display: block;
@@ -122,6 +154,8 @@ nav {
 
 @media only screen and (max-width: 479px) {
     .nav-list {
+        transform: translateY(-200%);
+        display: block;
         z-index: 1;
         position: absolute;
         top: 8vh;
@@ -130,12 +164,10 @@ nav {
         background: #0F1C29;
         flex-direction: column;
         align-items: center;
-        transform: translateY(-200%);
         transition: transform 0.4s ease-in;
     }
     .nav-list li {
         margin-left: 0;
-        opacity: 0;
     }
     .mobile-menu {
         display: block;
@@ -149,19 +181,9 @@ nav {
 }
 
 .nav-list.active {
-    transform: translateY(0%);
+    transform: translateY(-10%);
     display: block;
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    transition: transform 0.3s ease-in;
 }
 
 .mobile-menu.active .line1 {
@@ -178,7 +200,3 @@ nav {
 
 
 /*******************************/
-
-main {
-    background-color: #F5FAFF;
-}

@@ -5,7 +5,10 @@
 }
 
 .container-images-portfolio {
-    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .portfolio-container {
@@ -13,6 +16,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-block-end: 155px;
 }
 
 .portfolio-child {
