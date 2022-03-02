@@ -5,64 +5,62 @@
     font-family: "Montseerat", sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-    overflow-y: unset;
-    background-color: #F5FAFF;
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 main {
     background-color: #F5FAFF;
 }
 
-
-/*NAV BAR*/
+body {
+    background-color: #F5FAFF;
+}
 
 nav {
+    position: fixed;
     display: flex;
     justify-content: flex-end;
-    background-color: #0F1C29;
-    height: 56px;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #0F1C29;
+    height: 8vh;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+
+main {
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    display: none;
-}
-
-.button-nav-bar {
-    width: 100%;
-    border-top: 1px solid #F5FAFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 56px;
-    background-color: #0F1C29;
 }
 
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
-    background-color: #0F1C29;
 }
 
 .nav-list a {
     color: #F5FAFF;
     text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-    background-color: #0F1C29;
+    transition: 0.6s;
 }
 
-a:hover {
+.nav-list a:hover {
     opacity: 0.7;
 }
 
 .mobile-menu {
     display: none;
     cursor: pointer;
-    background-color: #0F1C29;
 }
 
 .mobile-menu div {
@@ -73,69 +71,21 @@ a:hover {
     transition: 0.3s;
 }
 
-
-/**********************************/
-
-
-/**********NAV DESKTOP*************/
-
-.nav-list-desk {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    margin: 0 24px 0 0;
-}
-
-.nav-list-desk div {
-    display: flex;
-    align-items: center;
-    height: 26px;
-}
-
-.nav-list-desk li {
-    margin: 0 25px 0 25px;
-}
-
-.nav-list-desk a {
-    color: #F5FAFF;
-    text-decoration: none;
-}
-
-.nav-desk-contact {
-    width: 110.25px;
-    min-height: 34.85px;
-    border-radius: 30px;
-    background-color: #F5FAFF;
-}
-
-.nav-desk-contact a {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
-    background-color: #F5FAFF;
-    color: #0F1C29;
-    text-decoration: none;
-}
-
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
     .nav-list {
-        display: block;
-        z-index: 1;
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 100%;
+        width: 100vw;
+        height: 30vh;
         background: #0F1C29;
         flex-direction: column;
         align-items: center;
-        transform: translateY(-200%);
+        justify-content: space-around;
+        transform: translateY(-142%);
         transition: transform 0.4s ease-in;
     }
     .nav-list li {
@@ -143,46 +93,11 @@ a:hover {
     }
     .mobile-menu {
         display: block;
-    }
-    .nav-list-desk div {
-        display: none;
-    }
-}
-
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-
-@media only screen and (max-width: 479px) {
-    .nav-list {
-        transform: translateY(-200%);
-        display: block;
-        z-index: 1;
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 100%;
-        background: #0F1C29;
-        flex-direction: column;
-        align-items: center;
-        transition: transform 0.4s ease-in;
-    }
-    .nav-list li {
-        margin-left: 0;
-    }
-    .mobile-menu {
-        display: block;
-    }
-    .button-desk {
-        display: block;
-    }
-    .nav-list-desk div {
-        display: none;
     }
 }
 
 .nav-list.active {
-    transform: translateY(-10%);
-    display: block;
+    transform: translateX(0);
     transition: transform 0.3s ease-in;
 }
 
