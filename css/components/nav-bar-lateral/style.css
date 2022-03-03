@@ -1,0 +1,16 @@
+.nav-bar-lateral {
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 78px;
+    left: 94vw;
+    top: 50vh;
+}
+
+.nav-bar-lateral li {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+}

@@ -5,6 +5,8 @@ function getDistanceFromTop(element) {
     return document.querySelector(id).offsetTop;
 }
 
+
+
 // function nativeScroll(distanceFromTop) {
 //     window.scroll({
 //         top: distanceFromTop,
