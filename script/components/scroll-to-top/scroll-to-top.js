@@ -1,18 +1,9 @@
-const footer = document.querySelectorAll('footer-to-top a[href^="#"]');
+const footer = document.querySelectorAll('.footer-to-top a[href^="#"]');
 
 function getDistanceFromTop(element) {
     const id = element.getAttribute("href");
     return document.querySelector(id).offsetTop;
 }
-
-
-
-// function nativeScroll(distanceFromTop) {
-//     window.scroll({
-//         top: distanceFromTop,
-//         behavior: "smooth",
-//     });
-// }
 
 function scrollToSection(event) {
     event.preventDefault();
@@ -23,7 +14,6 @@ function scrollToSection(event) {
 footer.forEach((link) => {
     link.addEventListener("click", scrollToSection);
 });
-
 
 function smoothScrollTo(endX, endY, duration) {
     const startX = window.scrollX || window.pageXOffset;

@@ -3,12 +3,21 @@
     flex-direction: column;
     position: fixed;
     z-index: 3;
-    display: flex;
+    display: table-column;
     justify-content: center;
     width: 15px;
     height: 78px;
     left: 94vw;
     top: 50vh;
+    opacity: 0;
+    transition: opacity 0.7s linear;
+    pointer-events: none;
+}
+
+.nav-bar-lateral.active {
+    opacity: 1;
+    display: block;
+    pointer-events: visible;
 }
 
 .nav-bar-lateral a {
@@ -20,6 +29,7 @@
     justify-content: center;
     min-width: 15px;
     min-height: 15px;
+    transition: all 0.7s;
 }
 
 .nav-bar-lateral a.active {
