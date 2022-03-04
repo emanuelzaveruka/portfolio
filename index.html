@@ -42,23 +42,14 @@
             <li><a class="link" href="#portfolios">Contato</a></li>
         </ul>
     </nav>
-    <div class="nav-bar-lateral">
-        <ul>
-            <li>
-                <a class="link" href="#sobreMim">x</a>
-            </li>
-            <li>
-                <a class="link" href="#skills">x</a>
-            </li>
-            <li>
-                <a class="link" href="#portfolios">x</a>
-            </li>
-            <li>
-                <a class="link" href="#portfolios">x</a>
-            </li>
-        </ul>
+    <div id="lateral" class="nav-bar-lateral">
+        <a class="link active" href="#contato"></a>
+        <a class="link" href="#sobreMim"></a>
+        <a class="link" href="#skills"></a>
+        <a class="link" href="#portfolios"></a>
+
     </div>
-    <section style="margin: 0;" id="contato">
+    <section id="contato">
         <div class="contact">
             <div class="contents">
                 <h4 class="title-main ">Emanuel Zaveruka</h4>
@@ -167,27 +158,28 @@
             <h4 class="title-main ">Portfolios</h4>
             <img class="separator-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/separator.svg">
         </div>
+
+        <div class="portfolio-container">
+            <div class="portfolio-child">
+                <a href="https://github.com/emanuelzaveruka/userdept" target="_blank">
+                    <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/userDept.svg">
+                </a>
+            </div>
+            <div class="portfolio-child">
+                <a href="https://github.com/emanuelzaveruka/myCoffee" target="_blank">
+                    <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/myCoffe.svg">
+                </a>
+            </div>
+            <div class="portfolio-child">
+                <a href="https://github.com/emanuelzaveruka/manoelsyntax">
+                    <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/manoelSyntax.svg">
+                </a>
+            </div>
+        </div>
     </section>
-    <div class="portfolio-container">
-        <div class="portfolio-child">
-            <a href="https://github.com/emanuelzaveruka/userdept" target="_blank">
-                <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/userDept.svg">
-            </a>
-        </div>
-        <div class="portfolio-child">
-            <a href="https://github.com/emanuelzaveruka/myCoffee" target="_blank">
-                <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/myCoffe.svg">
-            </a>
-        </div>
-        <div class="portfolio-child">
-            <a href="https://github.com/emanuelzaveruka/manoelsyntax">
-                <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/manoelSyntax.svg">
-            </a>
-        </div>
-    </div>
     <footer class="footer">
         <div class="footer-to-top">
-            <a href="#contato">
+            <a class="link" href="#contato">
                 <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/arrow.svg">
                 <p>VOLTAR AO TOPO</p>
             </a>
@@ -197,17 +189,16 @@
         </div>
     </footer>
 
-    <script src="/script/components/nav-bar/mobile-navbar.js"></script>
-    <script src="/script/components/scroll-in-js/scroll.js"></script>
-    <script src="/script/components/scrollDesk-in-js/scroll.js"></script>
-    <script src="/script/components/nav-bar-teste.js"></script>
-    <!--
-
     <script src="https://emanuelzaveruka.github.io/portfolio/script/components/nav-bar/mobile-navbar.js"></script>
     <script src="https://emanuelzaveruka.github.io/portfolio/script/components/scroll-in-js/scroll.js"></script>
-    <script src="https://emanuelzaveruka.github.io/portfolio/script/components/scrollDesk-in-js/scroll.js"></script>
-    <script src="https://emanuelzaveruka.github.io/portfolio/script/components/nav-bar-teste.js"></script>
+    <script src="https://emanuelzaveruka.github.io/portfolio/script/components/scroll-to-top/scroll-to-top.js"></script>
+    <!--
+    <script src="/script/components/nav-bar/mobile-navbar.js"></script>
+    <script src="/script/components/scroll-in-js/scroll.js"></script>
+    <script src="/script/components/scroll-to-top/scroll-to-top.js"></script>
 -->
+
+
 </body>
 
 </html>

@@ -1,29 +1,39 @@
 const menuLinks = document.querySelectorAll('.nav-list a[href^="#"]');
 
 function getDistanceFromTop(element) {
-    const id = element.getAttribute("href");
 
     return document.querySelector(id).offsetTop;
 
 }
 
-// function nativeScroll(distanceFromTop) {
-//     window.scroll({
-//         top: distanceFromTop,
-//         behavior: "smooth",
-//     });
-// }
-
 function scrollToSection(event) {
     event.preventDefault();
-    const distanceFromTop = getDistanceFromTop(event.target) - 10;
-    console.log(distanceFromTop);
+    const distanceFromTop = getDistanceFromTop(event.target) - 100;
     smoothScrollTo(0, distanceFromTop, 800);
 }
 
 menuLinks.forEach((link) => {
     link.addEventListener("click", scrollToSection);
 
+});
+
+$(function() {
+    var links = $("#lateral a");
+    $(window).scroll(function() {
+        var topScroll = $(window).scrollTop();
+        console.log(topScroll);
+        links.each(function() {
+            var href = $(this).attr('href');
+            var el = $(href);
+            var posSection = el.offset().top - 300;
+            var hSection = el.height();
+            console.log((posSection + hSection) > topScroll);
+            if (posSection <= topScroll && (posSection + hSection) > topScroll) {
+                links.removeClass('active');
+                $(this).addClass('active');
+            }
+        })
+    });
 });
 
 function smoothScrollTo(endX, endY, duration) {
