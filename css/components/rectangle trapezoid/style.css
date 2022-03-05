@@ -1,0 +1,35 @@
+.box {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.trapezoid {
+    margin-top: 8vh;
+    margin-left: 40%;
+    z-index: 2;
+    color: #121824;
+    border-bottom: 100vh solid;
+    border-left: 200px solid transparent;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .box {
+        height: unset;
+    }
+    .trapezoid {
+        display: none;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .box {
+        height: unset;
+    }
+    .trapezoid {
+        display: none;
+    }
+}

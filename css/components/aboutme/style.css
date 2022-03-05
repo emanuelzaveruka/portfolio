@@ -1,21 +1,129 @@
 .about-me {
-    margin: 50vh auto;
-    width: 90%;
+    position: absolute;
+    top: 25vh;
+    left: 55vw;
+    margin-top: 4vh;
+    width: 40%;
     text-align: center;
 }
 
+.about-me img {
+    display: none;
+}
+
+.about-me h4 {
+    display: none;
+}
+
 .contents-aboutme {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .contents-aboutme p {
-    text-align: left;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    color: #121824;
+    font-size: 32px;
+    line-height: 36px;
+    color: #F5FAFF;
+}
+
+@media only screen and (min-width:2000px) and (max-width: 2385px) {}
+
+@media only screen and (min-width:1750px) and (max-width: 1999px) {}
+
+@media only screen and (min-width:1400px) and (max-width: 1749px) {
+    .about-me {
+        left: 56vw;
+    }
+    .contents-aboutme p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width: 1399px) {
+    .about-me {
+        left: 57vw;
+    }
+    .contents-aboutme p {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+    .about-me {
+        left: 59vw;
+    }
+    .contents-aboutme p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .about-me img {
+        display: block;
+    }
+    .about-me h4 {
+        display: block;
+    }
+    .about-me {
+        position: inherit;
+        margin: 50vh auto;
+        width: 90%;
+        text-align: center;
+    }
+    .contents-aboutme {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contents-aboutme p {
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        color: #121824;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .about-me img {
+        display: block;
+    }
+    .about-me h4 {
+        display: block;
+    }
+    .about-me {
+        position: inherit;
+        margin: 50vh auto;
+        width: 90%;
+        text-align: center;
+    }
+    .contents-aboutme {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contents-aboutme p {
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #121824;
+    }
 }

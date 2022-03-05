@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="https://emanuelzaveruka.github.io/portfolio/css/components/skills/style.css">
     <link rel="stylesheet" href="https://emanuelzaveruka.github.io/portfolio/css/components/portfolio/style.css">
     <link rel="stylesheet" href="https://emanuelzaveruka.github.io/portfolio/css/components/footer/style.css">
+    <link rel="stylesheet" href="https://emanuelzaveruka.github.io/portfolio/css/components/rectangle trapezoid/style.css">
+
     <!--CSS LOCAL-->
+    <link rel="stylesheet" href="/css/components/rectangle trapezoid/style.css">
     <link rel="stylesheet" href="/css/components/nav-bar-mobile/style.css">
     <link rel="stylesheet" href="/css/components/nav-bar-lateral/style.css">
     <link rel="stylesheet" href="/css/components/contact/style.css">
@@ -39,51 +42,60 @@
             <li><a class="link" href="#sobreMim">Sobre mim</a></li>
             <li><a class="link" href="#skills">Skills</a></li>
             <li><a class="link" href="#portfolios">Portfólios</a></li>
-            <li><a class="link" href="#portfolios">Contato</a></li>
+            <li><a class="link nav-list-li-desk" href="#portfolios">Contato</a></li>
         </ul>
     </nav>
+
     <div id="lateral" class="nav-bar-lateral">
         <a class="link" href="#contato"></a>
         <a class="link" href="#sobreMim"></a>
         <a class="link" href="#skills"></a>
         <a class="link" href="#portfolios"></a>
     </div>
-    <section id="contato">
-        <div class="contact">
-            <div class="contents">
-                <h4 class="title-main ">Emanuel Zaveruka</h4>
-                <h2 class="subtitle-main">Full Stack Developer</h2>
+    <div class="box">
+        <section id="contato">
+
+            <div class="trapezoid"></div>
+            <div class="contact">
+                <div class="contents">
+                    <h4 class="title-main ">Emanuel Zaveruka</h4>
+                    <h2 class="subtitle-main">Full Stack Developer</h2>
+                    <div class="separator-image">
+                        <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/separator.svg">
+                    </div>
+                </div>
+                <div class="images-contact">
+                    <a href="mailto:emanuelzaveruka@gmail.com">
+                        <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/email.svg">
+                    </a>
+                    <a href="https://github.com/emanuelzaveruka" target="_blank">
+                        <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/Github.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/emanuel-zaveruka-588148212/" target="_blank">
+                        <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/linkedin.svg">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        </section>
+        <!--ABOUT ME-->
+        <section id="sobreMim">
+            <div class="about-me">
+                <h4 class="title-main ">Sobre mim</h4>
+                <img class="separator-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/separator.svg">
+                <div class="contents-aboutme">
+                    <p>
+                        Meu nome é Emanuel Zaveruka, sou estudante do primeiro ano em Engenharia De Software da Universidade Unicesumar. Estou estudando tecnologias do front-end e Back-end há pouco mais de um ano.
+                    </p>
+                    <p>
+                        <br>Sou apaixonado por programação e tenho como objetivo de vida ser um excelente profissional no mercado.
+                    </p>
+                </div>
                 <img class="separator-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/separator.svg">
             </div>
-            <div class="images-contact">
-                <a href="mailto:emanuelzaveruka@gmail.com">
-                    <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/email.svg">
-                </a>
-                <a href="https://github.com/emanuelzaveruka" target="_blank">
-                    <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/Github.svg">
-                </a>
-                <a href="https://www.linkedin.com/in/emanuel-zaveruka-588148212/" target="_blank">
-                    <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/linkedin.svg">
-                </a>
-            </div>
-        </div>
-    </section>
-    <!--ABOUT ME-->
-    <section id="sobreMim">
-        <div class="about-me">
-            <h4 class="title-main ">Sobre mim</h4>
-            <img class="separator-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/separator.svg">
-            <div class="contents-aboutme">
-                <p>
-                    Meu nome é Emanuel Zaveruka, sou estudante do primeiro ano em Engenharia De Software da Universidade Unicesumar. Estou estudando tecnologias do front-end e Back-end há pouco mais de um ano.
-                </p>
-                <p>
-                    <br>Sou apaixonado por programação e tenho como objetivo de vida ser um excelente profissional no mercado.
-                </p>
-            </div>
-            <img class="separator-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/separator.svg">
-        </div>
-    </section>
+        </section>
+    </div>
     <!--SKILLS-->
     <section id="skills">
         <div class="skills">
@@ -180,6 +192,7 @@
         <div class="footer-to-top">
             <a class="link" href="#contato">
                 <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/arrow.svg">
+
                 <p>VOLTAR AO TOPO</p>
             </a>
         </div>
@@ -193,12 +206,13 @@
     <script src="https://emanuelzaveruka.github.io/portfolio/script/components/scroll-to-top/scroll-to-top.js"></script>
     <script src="https://emanuelzaveruka.github.io/portfolio/script/components/scroll-bar-lateral/bar-lateral-scroll.js"></script>
 
-    <!--
-    <script src="/script/components/nav-bar/mobile-navbar.js"></script>
-    <script src="/script/components/scroll-in-js/scroll.js"></script>
-    <script src="/script/components/scroll-to-top/scroll-to-top.js"></script>
-    <script src="/script/components/scroll-bar-lateral/bar-lateral-scroll.js"></script>
 
+    <!-- 
+    <script src="/script/components/nav-bar/mobile-navbar.js"></script>
+    <script src="/script/components/scroll-to-top/scroll-to-top.js"></script>
+    <script src="/script/components/scroll-in-js/scroll.js"></script>
+
+    <script src="/script/components/scroll-bar-lateral/bar-lateral-scroll.js"></script>
 -->
 
 

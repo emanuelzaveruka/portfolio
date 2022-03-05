@@ -1,6 +1,8 @@
 .contact {
-    margin: 30vh auto;
-    width: 90%;
+    position: absolute;
+    top: 8vh;
+    margin: 20vh 0vh 25vh 15vh;
+    width: 25vw;
     text-align: center;
 }
 
@@ -13,31 +15,175 @@
 .title-main {
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 67px;
     line-height: 29px;
     color: #121B24;
 }
 
 .subtitle-main {
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 122px;
+    line-height: 140px;
     margin-top: 41px;
     color: #121B24;
 }
 
 .separator-image {
     margin-top: 41px;
+    width: -webkit-fill-available;
+}
+
+.separator-image img {
+    width: 80%;
+    height: auto
 }
 
 .images-contact {
+    margin-top: 1vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.images-contact img {
+    width: 85%;
+    height: 80px;
+}
+
 .images-contact a {
     background-color: #F5FAFF;
     margin: 50px 10px 0px 10px
+}
+
+@media only screen and (min-width:2000px) and (max-width: 2385px) {
+    .title-main {
+        font-size: 58px;
+    }
+}
+
+@media only screen and (min-width:1750px) and (max-width: 1999px) {
+    .title-main {
+        font-size: 48px;
+    }
+    .subtitle-main {
+        font-size: 100px;
+        line-height: 140px;
+    }
+}
+
+@media only screen and (min-width:1400px) and (max-width: 1749px) {
+    .title-main {
+        font-size: 40px;
+    }
+    .subtitle-main {
+        font-size: 80px;
+        line-height: 86px;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width: 1399px) {
+    .title-main {
+        font-size: 30px;
+    }
+    .subtitle-main {
+        font-size: 80px;
+        line-height: 86px;
+    }
+    .contact {
+        margin: 20vh 0vh 25vh 10vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+    .title-main {
+        font-size: 22px;
+    }
+    .subtitle-main {
+        font-size: 70px;
+        line-height: 76px;
+    }
+    .contact {
+        margin: 20vh 0vh 25vh 10vh;
+    }
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+
+@media only screen and (max-width: 767px) {
+    .contact {
+        position: inherit;
+        margin: 30vh auto;
+        width: 90%;
+        text-align: center;
+    }
+    .contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-main {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 29px;
+        color: #121B24;
+    }
+    .subtitle-main {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+        margin-top: 41px;
+        color: #121B24;
+    }
+    .separator-image {
+        margin-top: 41px;
+    }
+    .images-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .images-contact a {
+        background-color: #F5FAFF;
+        margin: 50px 10px 0px 10px
+    }
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .contact {
+        position: inherit;
+    }
+    .images-contact img {
+        width: 100%;
+        height: 35px;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .contact {
+        position: inherit;
+    }
+    .images-contact img {
+        width: 100%;
+        height: 35px;
+    }
+    .title-main {
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .subtitle-main {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 41px;
+    }
 }
