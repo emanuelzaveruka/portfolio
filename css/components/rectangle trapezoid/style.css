@@ -10,7 +10,7 @@
     z-index: 2;
     color: #121B24;
     border-bottom: 100vh solid;
-    border-left: 196px solid transparent;
+    border-left: 138px solid transparent;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
