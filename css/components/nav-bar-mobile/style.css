@@ -49,6 +49,10 @@ main {
     margin-left: 32px;
 }
 
+.nav-none-desk {
+    display: none;
+}
+
 .nav-list-li-desk {
     background: #FFFFFF;
     border: 4px solid #FFFFFF;
@@ -115,6 +119,9 @@ main {
         color: #F5FAFF !important;
     }
     .mobile-menu {
+        display: block;
+    }
+    .nav-none-desk {
         display: block;
     }
 }

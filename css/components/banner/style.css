@@ -1,0 +1,27 @@
+.banner-skills {
+    display: flex;
+    height: 220px;
+    background-color: #121B24;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-skills {
+    margin-top: 10px;
+}
+
+.title-skills {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F5FAFF;
+}
+
+.content-skills img {
+    width: 287.2px;
+    height: 13.23px;
+}

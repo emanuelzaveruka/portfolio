@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.container-content-skills {
+    margin: 0 20vw 0 20vw;
+}
+
 .skills-h1 {
     margin-top: 120px;
     font-family: Montserrat;
@@ -12,19 +16,6 @@
     line-height: 37px;
     display: flex;
     letter-spacing: .185em;
-}
-
-.banner-skills {
-    display: flex;
-    height: 220px;
-    background-color: #121B24;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.container-content-skills {
-    margin: 0 20vw 0 20vw;
 }
 
 .skills-container {
@@ -48,29 +39,9 @@
     height: 70px;
 }
 
-.content-skills {
-    margin-top: 10px;
-}
-
 .separator-image-skills {
-    display: none;
     margin-top: 41px;
     width: -webkit-fill-available;
-}
-
-.content-skills img {
-    width: 287.2px;
-    height: 13.23px;
-}
-
-.title-skills {
-    text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    color: #F5FAFF;
 }
 
 .skills-h3 {
@@ -148,6 +119,9 @@
         text-align: center;
         justify-content: center;
     }
+    .container-content-skills {
+        margin: 0 10vw 0 10vw;
+    }
 }
 
 
@@ -197,5 +171,8 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+    }
+    .container-content-skills {
+        margin: 0 10vw 0 10vw;
     }
 }

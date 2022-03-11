@@ -49,7 +49,7 @@
 
 .images-contact img {
     width: 85%;
-    height: 80px;
+    height: 60px;
 }
 
 .images-contact a {
@@ -88,11 +88,11 @@
         font-size: 30px;
     }
     .subtitle-main {
-        font-size: 80px;
+        font-size: 75px;
         line-height: 86px;
     }
     .contact {
-        margin: 20vh 0vh 25vh 10vh;
+        margin: 15vh 0vh 25vh 10vh;
     }
 }
 

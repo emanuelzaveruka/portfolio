@@ -3,10 +3,10 @@
     flex-flow: column;
     align-items: center;
     justify-content: space-around;
-    height: 220px;
+    height: 245px;
     padding: 30px 0;
     width: 100%;
-    background-color: #0F1C29;
+    background-color: #121B24;
 }
 
 .footer-to-top {
@@ -14,11 +14,16 @@
     flex-flow: column;
     align-items: center;
     color: #fff;
-    background-color: #0F1C29;
+    background-color: #121B24;
 }
 
 .footer-to-top * {
-    background-color: #0F1C29;
+    background-color: #121B24;
+}
+
+.footer-to-top img {
+    width: 40px;
+    height: auto;
 }
 
 .footer-to-top a {
@@ -55,12 +60,154 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 9px;
+    font-size: 17px;
     line-height: 11px;
     color: #fff;
+}
+
+.footer-right img {
+    width: 40px;
+    height: 40px;
 }
 
 .footer-right * {
     font-family: "Nunito";
     background-color: #121B24;
+}
+
+.links-footer {
+    display: flex;
+}
+
+.links-footer img {
+    margin: 0 14px 0 14px;
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 220px;
+        padding: 30px 0;
+        width: 100%;
+        background-color: #121B24;
+    }
+    .footer-to-top {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        color: #fff;
+        background-color: #121B24;
+    }
+    .footer-to-top * {
+        background-color: #121B24;
+    }
+    .footer-to-top a {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        height: 45px;
+        font-size: 15px;
+        line-height: 18px;
+        justify-content: space-between;
+        text-align: center;
+        letter-spacing: .18em;
+        color: #fff;
+    }
+    .footer-to-top p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #fff;
+    }
+    .footer-right {
+        display: flex;
+        align-items: center;
+    }
+    .footer-right a {
+        display: flex;
+        align-items: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 11px;
+        color: #fff;
+    }
+    .footer-right * {
+        font-family: "Nunito";
+        background-color: #121B24;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 220px;
+        padding: 30px 0;
+        width: 100%;
+        background-color: #121B24;
+    }
+    .footer-to-top {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        color: #fff;
+        background-color: #121B24;
+    }
+    .footer-to-top * {
+        background-color: #121B24;
+    }
+    .footer-to-top a {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        height: 45px;
+        font-size: 15px;
+        line-height: 18px;
+        justify-content: space-between;
+        text-align: center;
+        letter-spacing: .18em;
+        color: #fff;
+    }
+    .footer-to-top p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #fff;
+    }
+    .footer-right {
+        display: flex;
+        align-items: center;
+    }
+    .footer-right a {
+        display: flex;
+        align-items: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 11px;
+        color: #fff;
+    }
+    .footer-right * {
+        font-family: "Nunito";
+        background-color: #121B24;
+    }
 }
