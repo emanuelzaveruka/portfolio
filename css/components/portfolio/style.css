@@ -4,6 +4,17 @@
     text-align: center;
 }
 
+.portfolio h4 {
+    font-size: 30px;
+    display: none;
+}
+
+.portfolio img {
+    display: none;
+    margin-top: 41px;
+    width: -webkit-fill-available;
+}
+
 .container-images-portfolio {
     display: flex;
     flex-flow: column;
@@ -13,20 +24,107 @@
 
 .portfolio-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-block-end: 155px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly
 }
 
 .portfolio-child {
-    flex-direction: column;
-    align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     flex-grow: 1;
-    min-width: 150px;
+    min-width: 428px;
+    max-width: 428px;
     flex-basis: 25%;
+    padding: 40px 10px;
 }
 
 .portfolio-image {
     width: 100%;
+}
+
+@media only screen and (min-width:2000px) and (max-width: 2385px) {}
+
+@media only screen and (min-width:1750px) and (max-width: 1999px) {}
+
+@media only screen and (min-width:1400px) and (max-width: 1749px) {}
+
+@media only screen and (min-width:1000px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {}
+
+
+/* All Mobile Sizes (devices and browser) */
+
+@media only screen and (max-width: 767px) {}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio {
+        margin: 5vh auto;
+        width: 90%;
+        text-align: center;
+    }
+    .container-images-portfolio {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .portfolio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-block-end: 155px;
+    }
+    .portfolio-child {
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 150px;
+        flex-basis: 25%;
+    }
+    .portfolio-image {
+        width: 100%;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .portfolio {
+        margin: 5vh auto;
+        width: 90%;
+        text-align: center;
+    }
+    .container-images-portfolio {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .portfolio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-block-end: 155px;
+    }
+    .portfolio-child {
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 150px;
+        flex-basis: 25%;
+    }
+    .portfolio-image {
+        width: 100%;
+    }
 }
