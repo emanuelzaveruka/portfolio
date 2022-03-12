@@ -10,6 +10,7 @@
     color: #121B24;
     border-bottom: 100vh solid;
     border-left: 138px solid transparent;
+    margin-left: 40%;
     animation-fill-mode: forwards;
     animation: slide 2.5s ease-in-out;
 }
