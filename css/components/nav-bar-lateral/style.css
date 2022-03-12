@@ -6,7 +6,7 @@
     display: none;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 767px) {
     .nav-bar-lateral {
         list-style: none;
         flex-direction: column;

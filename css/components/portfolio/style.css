@@ -45,14 +45,13 @@
 
 .portfolio-image {
     width: 100%;
-    -webkit-box-shadow: none;
+    transition: 1s;
 }
 
 .portfolio-image:hover {
     filter: drop-shadow(5);
     -webkit-box-shadow: -1px 3px 14px 2px rgba(0, 0, 0, 0.3);
     box-shadow: -1px 3px 14px 2px rgba(0, 0, 0, 0.3);
-    transition: 0.8s;
     transform: scale(1.07);
 }
 
