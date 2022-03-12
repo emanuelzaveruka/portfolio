@@ -40,10 +40,20 @@
     max-width: 428px;
     flex-basis: 25%;
     padding: 40px 10px;
+    cursor: pointer;
 }
 
 .portfolio-image {
     width: 100%;
+    -webkit-box-shadow: none;
+}
+
+.portfolio-image:hover {
+    filter: drop-shadow(5);
+    -webkit-box-shadow: -1px 3px 14px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px 3px 14px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.8s;
+    transform: scale(1.07);
 }
 
 @media only screen and (min-width:2000px) and (max-width: 2385px) {}
