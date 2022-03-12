@@ -24,6 +24,16 @@
 .footer-to-top img {
     width: 40px;
     height: auto;
+    animation: slideimage 1s ease-in alternate infinite;
+}
+
+@keyframes slideimage {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
 }
 
 .footer-to-top a {
