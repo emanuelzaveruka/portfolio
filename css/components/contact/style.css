@@ -6,6 +6,15 @@
     text-align: center;
 }
 
+@keyframes texthover {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .contents {
     display: flex;
     flex-direction: column;
@@ -18,6 +27,8 @@
     font-size: 67px;
     line-height: 29px;
     color: #121B24;
+    animation-fill-mode: forwards;
+    animation: texthover 1s ease-in-out;
 }
 
 .subtitle-main {
@@ -28,16 +39,19 @@
     line-height: 140px;
     margin-top: 41px;
     color: #121B24;
+    animation-fill-mode: forwards;
+    animation: texthover 1.5s ease-in-out;
 }
 
 .separator-image {
     margin-top: 41px;
     width: -webkit-fill-available;
+    animation-fill-mode: forwards;
+    animation: texthover 2s ease-in-out;
 }
 
 .separator-image img {
     width: 80%;
-    height: auto
 }
 
 .images-contact {
@@ -45,6 +59,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-fill-mode: forwards;
+    animation: texthover 2.5s ease-in-out;
 }
 
 .images-contact img {

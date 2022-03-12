@@ -6,11 +6,21 @@
 
 .trapezoid {
     margin-top: 8vh;
-    margin-left: 40%;
     z-index: 2;
     color: #121B24;
     border-bottom: 100vh solid;
     border-left: 138px solid transparent;
+    animation-fill-mode: forwards;
+    animation: slide 2.5s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 43%;
+    }
+    100% {
+        margin-left: 40%;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {

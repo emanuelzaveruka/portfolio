@@ -1,10 +1,11 @@
 .about-me {
     position: absolute;
     top: 25vh;
-    left: 55vw;
     margin-top: 4vh;
     width: 40%;
     text-align: center;
+    animation-fill-mode: forwards;
+    animation: slidetext 0.8s ease-in-out;
 }
 
 .about-me img {
@@ -29,6 +30,19 @@
     font-size: 32px;
     line-height: 36px;
     color: #F5FAFF;
+    animation-fill-mode: forwards;
+    animation: slidetext 0.8s ease-in-out;
+}
+
+@keyframes slidetext {
+    0% {
+        opacity: 0;
+        left: 56vw;
+    }
+    100% {
+        opacity: 1;
+        left: 55vw;
+    }
 }
 
 @media only screen and (min-width:2000px) and (max-width: 2385px) {}
@@ -43,6 +57,16 @@
         font-size: 25px;
         line-height: 28px;
     }
+    @keyframes slidetext {
+        0% {
+            opacity: 0;
+            left: 57vw;
+        }
+        100% {
+            opacity: 1;
+            left: 56vw;
+        }
+    }
 }
 
 @media only screen and (min-width:1000px) and (max-width: 1399px) {
@@ -53,6 +77,16 @@
         font-size: 18px;
         line-height: 21px;
     }
+    @keyframes slidetext {
+        0% {
+            opacity: 0;
+            left: 58vw;
+        }
+        100% {
+            opacity: 1;
+            left: 57vw;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 999px) {
@@ -62,6 +96,16 @@
     .contents-aboutme p {
         font-size: 16px;
         line-height: 20px;
+    }
+    @keyframes slidetext {
+        0% {
+            opacity: 0;
+            left: 60vw;
+        }
+        100% {
+            opacity: 1;
+            left: 59vw;
+        }
     }
 }
 
