@@ -11,6 +11,10 @@
     letter-spacing: 4px;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 main {
     background-color: #F5FAFF;
 }
