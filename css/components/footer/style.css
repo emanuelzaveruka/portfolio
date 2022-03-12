@@ -93,6 +93,11 @@
     margin: 0 14px 0 14px;
     width: 50px;
     height: 50px;
+    transition: 0.6s;
+}
+
+.links-footer img:hover {
+    opacity: 0.7;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -155,6 +160,9 @@
         font-family: "Nunito";
         background-color: #121B24;
     }
+    .links-footer img {
+        display: none;
+    }
 }
 
 
@@ -212,12 +220,15 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 11px;
         line-height: 11px;
         color: #fff;
     }
     .footer-right * {
         font-family: "Nunito";
         background-color: #121B24;
+    }
+    .links-footer img {
+        display: none;
     }
 }

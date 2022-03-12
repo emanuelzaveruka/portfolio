@@ -66,6 +66,11 @@
 .images-contact img {
     width: 85%;
     height: 60px;
+    transition: 0.6s;
+}
+
+.images-contact img:hover {
+    opacity: 0.7;
 }
 
 .images-contact a {
