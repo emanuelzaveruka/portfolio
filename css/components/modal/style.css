@@ -1,0 +1,140 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #F5FAFF;
+    max-width: 1000px;
+    max-height: 1000px;
+    z-index: 2000;
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #F5FAFF;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    background: #F5FAFF;
+}
+
+.container-content-modal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.image-modal {
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-width: 428px;
+    max-width: 100%;
+    flex-basis: 25%;
+    padding: 40px 10px;
+}
+
+.content-modal {
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    min-width: 325px;
+    max-width: 100%;
+    flex-basis: 25%;
+    padding: 40px 10px;
+}
+
+.content-modal p {
+    padding-top: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.content-modal span {
+    font-weight: 700;
+}
+
+.content-modal h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    margin-top: 1.6rem;
+    color: var(--title);
+    border-bottom: 1px solid #000;
+}
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.05rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+    background: #F5FAFF;
+}
+
+.modal-footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F5FAFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    width: 220px;
+    height: 60px;
+    background-color: #121B24;
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

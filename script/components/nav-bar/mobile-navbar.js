@@ -2,6 +2,7 @@ const hamburguer = document.querySelector(".mobile-menu");
 const navMenu = document.querySelector(".nav-list");
 
 hamburguer.addEventListener("click", () => {
+    console.log(hamburguer);
     hamburguer.classList.toggle("active");
     navMenu.classList.toggle("active");
 })
