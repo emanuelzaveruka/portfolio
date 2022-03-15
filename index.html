@@ -19,7 +19,7 @@
 
 -->
     <!--CSS LOCAL-->
-    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/components/banner/style.css">
     <link rel="stylesheet" href="./css/components/rectangle trapezoid/style.css">
     <link rel="stylesheet" href="./css/components/nav-bar-mobile/style.css">
@@ -33,6 +33,8 @@
     <title>EmanuelZs</title>
     <!--SCRIPT-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -190,22 +192,22 @@
 
         <div class="portfolio-container">
             <div class="portfolio-child">
-                <a id="#msemail" data-modal="myModal1" class="buttonModal">
+                <a data-toggle="modal" data-target="#modalMsEmail">
                     <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/msEmail.svg">
                 </a>
             </div>
             <div class="portfolio-child">
-                <a id="#userdept" data-modal="myModal2" class="buttonModal">
+                <a data-toggle="modal" data-target="#modalUserDept">
                     <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/userDept.svg">
                 </a>
             </div>
             <div class="portfolio-child">
-                <a id="#mycoffe" data-modal="myModal3" class="buttonModal">
+                <a data-toggle="modal" data-target="#modalMyCoffee">
                     <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/myCoffe.svg">
                 </a>
             </div>
             <div class="portfolio-child">
-                <a id="#manoelsyntax" data-modal="myModal4" class="buttonModal">
+                <a data-toggle="modal" data-target="#modalManoelSyntax">
                     <img class="portfolio-image" src="https://emanuelzaveruka.github.io/portfolio/assets/img/manoelSyntax.svg">
                 </a>
             </div>
@@ -237,134 +239,148 @@
             </a>
         </div>
     </footer>
-    <div id="myModal1" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Modal Header</h2>
-                <span class="close"><img src="/assets/img/buttonExitModal.svg"></span>
-
-            </div>
-            <div class="modal-body">
-                <div class="container-content-modal">
-                    <div class="image-modal">
-                        <img id="modal-btn" id="msemail" src="https://emanuelzaveruka.github.io/portfolio/assets/img/msEmail.svg">
-                    </div>
-                    <div class="content-modal">
-                        <h4>Informações:</h4>
-                        <p>Aplicação criada no template React para Vite.Js, na qual utiliza a biblioteca Toastify para exibir os logs de resposta ao envio do formulário. Fake api construída com Axios e MirageJS.</p>
-                        <h4>Detalhes:</h4>
-                        <div>
-                            <p> <span>Tecnologia:</span> HTML, React.Js, Sass, Toastify, MirageJS, Axios </p>
-                            <p> <span>Data: </span>nov/21
-
-                                <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
+    <!--MODALS-->
+    <!--MODAL MSEMAIL-->
+    <div class="modal fade" id="modalMsEmail" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="TituloModalCentralizado">msEmail</h2>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-7">
+                                <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/msEmail.svg">
+                            </div>
+                            <div class="col-md-5">
+                                <h4>Informações:</h4>
+                                <p>Micro Serviço de envio de email onde recebe um parâmetro POST. Faz o envio do email e armazena no banco de dados local. </p>
+                                <h4>Detalhes:</h4>
+                                <div>
+                                    <p> <span>Tecnologia:</span> Java 17, Spring Boot </p>
+                                    <p> <span>Data: </span>Mar/22
+                                        <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="myModal2" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Modal 2</h2>
-                <span class="close"><img src="/assets/img/buttonExitModal.svg"></span>
-
-            </div>
-            <div class="modal-body">
-                <div class="container-content-modal">
-                    <div class="image-modal">
-                        <img id="modal-btn" id="msemail" src="https://emanuelzaveruka.github.io/portfolio/assets/img/msEmail.svg">
-                    </div>
-                    <div class="content-modal">
-                        <h4>Informações:</h4>
-                        <p>Aplicação criada no template React para Vite.Js, na qual utiliza a biblioteca Toastify para exibir os logs de resposta ao envio do formulário. Fake api construída com Axios e MirageJS.</p>
-                        <h4>Detalhes:</h4>
-                        <div>
-                            <p> <span>Tecnologia:</span> HTML, React.Js, Sass, Toastify, MirageJS, Axios </p>
-                            <p> <span>Data: </span>nov/21
-
-                                <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="myModal3" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Modal 3</h2>
-                <span class="close"><img src="/assets/img/buttonExitModal.svg"></span>
-
-            </div>
-            <div class="modal-body">
-                <div class="container-content-modal">
-                    <div class="image-modal">
-                        <img id="modal-btn" id="msemail" src="https://emanuelzaveruka.github.io/portfolio/assets/img/msEmail.svg">
-                    </div>
-                    <div class="content-modal">
-                        <h4>Informações:</h4>
-                        <p>Aplicação criada no template React para Vite.Js, na qual utiliza a biblioteca Toastify para exibir os logs de resposta ao envio do formulário. Fake api construída com Axios e MirageJS.</p>
-                        <h4>Detalhes:</h4>
-                        <div>
-                            <p> <span>Tecnologia:</span> HTML, React.Js, Sass, Toastify, MirageJS, Axios </p>
-                            <p> <span>Data: </span>nov/21
-
-                                <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
-                        </div>
-                    </div>
-
-                </div>
-                <span class="close">
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div>
-                </span>
-            </div>
-        </div>
-    </div>
-    <div id="myModal4" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Modal 4</h2>
-                <span class="close"><img src="/assets/img/buttonExitModal.svg"></span>
-
-            </div>
-            <div class="modal-body">
-                <div class="container-content-modal">
-                    <div class="image-modal">
-                        <img id="modal-btn" id="msemail" src="https://emanuelzaveruka.github.io/portfolio/assets/img/msEmail.svg">
-                    </div>
-                    <div class="content-modal">
-                        <h4>Informações:</h4>
-                        <p>Aplicação criada no template React para Vite.Js, na qual utiliza a biblioteca Toastify para exibir os logs de resposta ao envio do formulário. Fake api construída com Axios e MirageJS.</p>
-                        <h4>Detalhes:</h4>
-                        <div>
-                            <p> <span>Tecnologia:</span> HTML, React.Js, Sass, Toastify, MirageJS, Axios </p>
-                            <p> <span>Data: </span>nov/21
-
-                                <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
-                        </div>
-                    </div>
-
-                </div>
-                <a class="close">
                     <div class="modal-footer">
-                        <h3>Modal Footer</h3>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
+    <!--END MODAL-->
+    <!--MODAL USERDEPT-->
+    <div class="modal fade" id="modalUserDept" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="TituloModalCentralizado">USERDEPT</h2>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-7">
+                                <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/userDept.svg">
+                            </div>
+                            <div class="col-md-5">
+                                <h4>Informações:</h4>
+                                <p>Trata-se de um sistema (API REST) de usuários e departamentos. Nele é possível realizar a consulta do usuário por id, inserir um novo usuário e consultar todos os usuários do banco de dados local.</p>
+                                <h4>Detalhes:</h4>
+                                <div>
+                                    <p> <span>Tecnologia:</span> Java 17, Spring Boot</p>
+                                    <p> <span>Data: </span>Jan/22
+                                        <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END MODAL-->
+    <!--MODAL MYCOFFEE-->
+    <div class="modal fade" id="modalMyCoffee" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="TituloModalCentralizado">MyCoffee</h2>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-7">
+                                <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/myCoffe.svg">
+                            </div>
+                            <div class="col-md-5">
+                                <h4>Informações:</h4>
+                                <p>Web site vitrine responsivo, o foco principal desse site é apresentar os produtos da loja fictícia myCoffee. O projeto ainda está em desenvolvimento com a possibilidade de trazer novos layouts de E-commerce</p>
+                                <h4>Detalhes:</h4>
+                                <div>
+                                    <p> <span>Tecnologia:</span> HTML5, CSS, JS, Jquery, Bootstrap </p>
+                                    <p> <span>Data: </span>Fev/22
+                                        <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END MODAL-->
+    <!--MODAL MANOEL SYNTAX-->
+    <div class="modal fade" id="modalManoelSyntax" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="TituloModalCentralizado">manoel Syntax</h2>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-7">
+                                <img src="https://emanuelzaveruka.github.io/portfolio/assets/img/manoelSyntax.svg">
+                            </div>
+                            <div class="col-md-5">
+                                <h4>Informações:</h4>
+                                <p>Manoel Syntax Trata-se de um site responsivo, que tem como objetivo ser um manual simplificado das sintaxes de qualquer linguagem o projeto inicialmente foi iniciado para aplicativo mobile em React mas, foi finalzado como
+                                    web site.
+                                </p>
+                                <h4>Detalhes:</h4>
+                                <div>
+                                    <p> <span>Tecnologia:</span> HTML, CSS, JS </p>
+                                    <p> <span>Data: </span>Jun/21
+                                        <p><span>Veja mais em: </span><img src="https://emanuelzaveruka.github.io/portfolio/assets/img/gitHubBlack.svg">
+                                </div>
+                            </div>
+                            <div class="content-modal">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END MODAL-->
     <!--
     <script src="https://emanuelzaveruka.github.io/portfolio/script/components/nav-bar/mobile-navbar.js"></script>
     <script src="https://emanuelzaveruka.github.io/portfolio/script/components/scroll-in-js/scroll.js"></script>
