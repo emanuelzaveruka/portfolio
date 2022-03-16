@@ -5,12 +5,6 @@
     font-family: "Montseerat", sans-serif;
 }
 
-*,
- ::after,
- ::before {
-    box-sizing: unset;
-}
-
 .logo {
     font-size: 24px;
     text-transform: uppercase;
@@ -139,6 +133,12 @@ main {
 .nav-list.active {
     transform: translateX(0);
     transition: transform 0.3s ease-in;
+}
+
+.nav-list,
+ ::after,
+ ::before {
+    box-sizing: unset;
 }
 
 .mobile-menu.active .line1 {
