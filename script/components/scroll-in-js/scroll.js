@@ -8,13 +8,12 @@ function getDistanceFromTop(element) {
 
 function scrollToSection(event) {
     event.preventDefault();
-    const distanceFromTop = getDistanceFromTop(event.target) - 100;
+    const distanceFromTop = getDistanceFromTop(event.target) - 10;
     smoothScrollTo(0, distanceFromTop, 800);
 }
 
 menuLinks.forEach((link) => {
     link.addEventListener("click", scrollToSection);
-
 });
 
 function smoothScrollTo(endX, endY, duration) {
