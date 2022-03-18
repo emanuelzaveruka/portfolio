@@ -1,12 +1,7 @@
 const hamburguer = document.querySelector(".mobile-menu");
 const navMenu = document.querySelector(".nav-list");
 
-hamburguer.addEventListener("click", () => {
-    hamburguer.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
-
-document.querySelectorAll(".link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".link" || ".mobile-menu active").forEach(n => n.addEventListener("click", () => {
     hamburguer.classList.remove("active");
     navMenu.classList.remove("active");
 }))
@@ -17,3 +12,19 @@ window.addEventListener('mouseup', function(event) {
         hamburguer.classList.remove("active");
     }
 });
+
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    hamburguer.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    const active = navMenu.classList.contains('active');
+    event.currentTarget.setAttribute('aria-expanded', active);
+    if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+    } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+    }
+}
+
+hamburguer.addEventListener('click', toggleMenu);
+hamburguer.addEventListener('touchstart', toggleMenu);

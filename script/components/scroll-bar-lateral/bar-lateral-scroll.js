@@ -9,8 +9,7 @@ function getDistanceFromTop(element) {
 function scrollToSection(event) {
     event.preventDefault();
     const distanceFromTop = getDistanceFromTop(event.target) - 10;
-    console.log(distanceFromTop);
-    smoothScrollTo(0, distanceFromTop, 800);
+    smoothScrollTo(0, distanceFromTop, 100);
 }
 
 menuLateral.forEach((link) => {
@@ -20,7 +19,7 @@ menuLateral.forEach((link) => {
 
 $(function() {
     var links = $("#lateral a");
-    var teste = $("#lateral");
+    var lateral = $("#lateral");
     $(window).scroll(function() {
         var topScroll = $(window).scrollTop();
         links.each(function() {
@@ -29,7 +28,7 @@ $(function() {
             var posSection = el.offset().top - 300;
             var hSection = el.height();
             if (posSection <= topScroll && (posSection + hSection) > topScroll) {
-                teste.addClass('active');
+                lateral.addClass('active');
                 links.removeClass('active');
                 $(this).addClass('active');
             }
@@ -38,9 +37,9 @@ $(function() {
 });
 
 $(window).scroll(function() {
-    var teste = $("#lateral");
+    var lateral = $("#lateral");
     clearTimeout($.data(this, 'scrollTimer'));
     $.data(this, 'scrollTimer', setTimeout(function() {
-        teste.removeClass('active');
+        lateral.removeClass('active');
     }, 1500));
 });
