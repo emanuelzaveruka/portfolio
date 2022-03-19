@@ -1,5 +1,5 @@
 .modal h2 {
-    color: #121B24;
+    color: var(--fontblack);
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -9,8 +9,8 @@
     font-weight: 700;
     line-height: 3.2rem;
     margin-top: 1.6rem;
-    color: #121B24;
-    border-bottom: 1px solid #121B24;
+    color: var(--fontblack);
+    border-bottom: 1px solid var(--fontblack);
 }
 
 .modal-content {
@@ -19,7 +19,7 @@
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #F5FAFF;
+    background-color: var(--bgwhite);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 0.3rem;
@@ -32,7 +32,7 @@
 }
 
 .modal p {
-    color: #121B24;
+    color: var(--fontblack);
     padding-top: 0.5rem;
     line-height: 1.28rem;
     font-size: 1.1rem;
@@ -45,7 +45,7 @@
 
 .btn-secondary {
     font-weight: 700;
-    color: #fff;
-    background-color: #121B24;
-    border-color: #121B24;
+    color: var(--fontblack);
+    background-color: var(--fontblack);
+    border-color: var(--fontwhite);
 }

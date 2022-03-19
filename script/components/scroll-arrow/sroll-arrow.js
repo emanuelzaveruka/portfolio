@@ -1,4 +1,4 @@
-const mobileArrow = document.querySelectorAll('.boxForArrow img[href^="#"]');
+const mobileArrow = document.querySelectorAll('.boxForArrow svg[href^="#"]');
 
 function scrollToSection(event) {
     event.preventDefault();

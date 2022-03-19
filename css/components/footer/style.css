@@ -133,6 +133,7 @@
         font-weight: bold;
         font-size: 15px;
         line-height: 18px;
+        color: var(--fontwhite);
     }
     .footer-right {
         display: flex;
@@ -146,6 +147,7 @@
         font-weight: bold;
         font-size: 17px;
         line-height: 11px;
+        color: var(--fontwhite);
     }
     .links-footer img {
         display: none;
@@ -181,7 +183,6 @@
         justify-content: space-between;
         text-align: center;
         letter-spacing: .18em;
-        f;
     }
     .footer-to-top p {
         font-family: Montserrat;
@@ -189,6 +190,7 @@
         font-weight: bold;
         font-size: 15px;
         line-height: 18px;
+        color: var(--fontwhite);
     }
     .footer-right {
         display: flex;
@@ -202,6 +204,7 @@
         font-weight: bold;
         font-size: 11px;
         line-height: 11px;
+        color: var(--fontwhite);
     }
     .links-footer img {
         display: none;

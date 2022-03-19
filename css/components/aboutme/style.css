@@ -9,7 +9,7 @@
     animation: slidetext 0.8s ease-in-out;
 }
 
-.about-me img {
+.about-me svg {
     display: none;
 }
 
@@ -30,7 +30,7 @@
     font-weight: normal;
     font-size: 32px;
     line-height: 36px;
-    color: var(--fontWhite);
+    color: var(--fontwhite);
     animation-fill-mode: forwards;
     animation: slidetext 0.8s ease-in-out;
 }
@@ -114,7 +114,7 @@
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .about-me img {
+    .about-me svg {
         display: block;
     }
     .about-me h4 {
@@ -138,7 +138,7 @@
         font-weight: normal;
         font-size: 24px;
         line-height: 30px;
-        color: var(--fontBlack);
+        color: var(--fontblack);
     }
 }
 
@@ -146,7 +146,7 @@
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 
 @media only screen and (max-width: 479px) {
-    .about-me img {
+    .about-me svg {
         display: block;
     }
     .about-me h4 {
@@ -170,6 +170,6 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
-        color: var(--font);
+        color: var(--fontblack);
     }
 }

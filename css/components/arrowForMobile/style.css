@@ -19,7 +19,7 @@
             transform: translateY(-10px);
         }
     }
-    .boxForArrow img {
+    .boxForArrow svg {
         animation: hover 3s ease-in-out;
     }
     @keyframes hover {
