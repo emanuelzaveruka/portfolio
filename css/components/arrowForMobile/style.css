@@ -1,0 +1,33 @@
+.boxForArrow {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .boxForArrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-delay: 3s;
+        animation: arrow 0.3s ease-in alternate infinite;
+        margin-block-end: 20px;
+    }
+    @keyframes arrow {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(-10px);
+        }
+    }
+    .boxForArrow img {
+        animation: hover 3s ease-in-out;
+    }
+    @keyframes hover {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

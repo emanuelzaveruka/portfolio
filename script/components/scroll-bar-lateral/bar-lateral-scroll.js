@@ -3,7 +3,6 @@ const menuLateral = document.querySelectorAll('.nav-bar-lateral a[href^="#"]');
 function getDistanceFromTop(element) {
     const id = element.getAttribute("href");
     return document.querySelector(id).offsetTop;
-
 }
 
 function scrollToSection(event) {
