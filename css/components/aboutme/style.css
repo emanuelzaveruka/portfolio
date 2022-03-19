@@ -30,7 +30,7 @@
     font-weight: normal;
     font-size: 32px;
     line-height: 36px;
-    color: #F5FAFF;
+    color: var(--fontWhite);
     animation-fill-mode: forwards;
     animation: slidetext 0.8s ease-in-out;
 }
@@ -138,7 +138,7 @@
         font-weight: normal;
         font-size: 24px;
         line-height: 30px;
-        color: #121824;
+        color: var(--fontBlack);
     }
 }
 
@@ -170,6 +170,6 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
-        color: #121824;
+        color: var(--font);
     }
 }

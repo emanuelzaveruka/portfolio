@@ -1,7 +1,7 @@
 .banner-skills {
     display: flex;
     height: 220px;
-    background-color: #121B24;
+    background-color: var(--components);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -18,7 +18,7 @@
     font-weight: 400;
     font-size: 31px;
     line-height: 44px;
-    color: #F5FAFF;
+    color: var(--fontWhite);
 }
 
 .content-skills img {

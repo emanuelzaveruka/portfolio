@@ -7,7 +7,7 @@
 .trapezoid {
     margin-top: 8vh;
     z-index: 2;
-    color: #121B24;
+    color: var(--components);
     border-bottom: 100vh solid;
     border-left: 138px solid transparent;
     margin-left: 40%;

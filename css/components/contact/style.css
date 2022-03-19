@@ -26,7 +26,7 @@
     font-weight: normal;
     font-size: 67px;
     line-height: 29px;
-    color: #121B24;
+    color: var(--fontBlack);
     animation-fill-mode: forwards;
     animation: texthover 1s ease-in-out;
 }
@@ -38,7 +38,7 @@
     font-size: 122px;
     line-height: 140px;
     margin-top: 41px;
-    color: #121B24;
+    color: var(--fontBlack);
     animation-fill-mode: forwards;
     animation: texthover 1.5s ease-in-out;
 }
@@ -74,7 +74,6 @@
 }
 
 .images-contact a {
-    background-color: #F5FAFF;
     margin: 50px 10px 0px 10px
 }
 
@@ -150,7 +149,7 @@
         font-weight: normal;
         font-size: 28px;
         line-height: 29px;
-        color: #121B24;
+        color: var(--fontBlack);
     }
     .subtitle-main {
         font-style: normal;
@@ -158,7 +157,7 @@
         font-size: 30px;
         line-height: 37px;
         margin-top: 41px;
-        color: #121B24;
+        color: var(--fontBlack);
     }
     .separator-image {
         margin-top: 41px;
@@ -169,7 +168,6 @@
         align-items: center;
     }
     .images-contact a {
-        background-color: #F5FAFF;
         margin: 50px 10px 0px 10px
     }
 }

@@ -8,6 +8,7 @@
 }
 
 .skills-h1 {
+    color: var(--fontBlack);
     margin-top: 120px;
     font-family: Montserrat;
     font-style: normal;
@@ -45,6 +46,7 @@
 }
 
 .skills-h3 {
+    color: var(--fontBlack);
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
