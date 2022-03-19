@@ -11,7 +11,7 @@ function scrollToSection(event) {
     event.preventDefault();
     const distanceFromTop = getDistanceFromTop(event.target) - 10;
     console.log(distanceFromTop);
-    smoothScrollTo(0, distanceFromTop, 150);
+    smoothScrollTo(0, distanceFromTop, 600);
 }
 
 footer.forEach((link) => {
