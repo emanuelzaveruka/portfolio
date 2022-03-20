@@ -53,3 +53,8 @@
 .modal svg {
     padding-left: 10px;
 }
+
+.close-btn-modal {
+    border: none;
+    background-color: var(--bgwhite);
+}

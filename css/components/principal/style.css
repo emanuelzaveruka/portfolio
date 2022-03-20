@@ -18,4 +18,5 @@ html {
 
 body {
     background-color: var(--bgwhite);
+    transition: background-color 500ms;
 }
