@@ -45,7 +45,11 @@
 
 .btn-secondary {
     font-weight: 700;
-    color: var(--fontblack);
+    color: var(--bgwhite);
     background-color: var(--fontblack);
     border-color: var(--fontwhite);
+}
+
+.modal svg {
+    padding-left: 10px;
 }

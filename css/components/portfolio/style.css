@@ -56,12 +56,6 @@
     transform: scale(1.07);
 }
 
-.linkModal {
-    padding-left: 10px;
-    width: 35px;
-    height: auto;
-}
-
 .portfolio-image ::after,
  ::before {}
 
