@@ -58,3 +58,7 @@
     border: none;
     background-color: var(--bgwhite);
 }
+
+.modal-content a {
+    text-decoration: none;
+}
