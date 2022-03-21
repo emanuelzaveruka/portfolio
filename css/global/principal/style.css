@@ -4,19 +4,19 @@
     padding: 0;
     font-family: "Montseerat", sans-serif;
     -webkit-tap-highlight-color: transparent;
+    transition: background-color 500ms;
 }
 
 html {
     --bgblack: #121B24;
-    --bgwhite: #F5F5F5;
-    --fontblack: #121B24;
+    --bgwhite: #121B24;
+    --fontblack: #F5FAFF;
     --fontwhite: #f5f5f5;
-    --imageslink: #466380;
-    --components: #121B24;
+    --imageslink: #F5FAFF;
+    --components: #18222D;
     --font-black-menu: #121B24;
 }
 
 body {
     background-color: var(--bgwhite);
-    transition: background-color 500ms;
 }

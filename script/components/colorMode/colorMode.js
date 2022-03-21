@@ -14,12 +14,12 @@ const initialColors = {
     imageslink: getStyle(html, "--imageslink"),
 }
 
-const darkMode = {
+const lightMode = {
 
-    bgwhite: "#121B24",
-    components: "#18222D",
-    fontblack: "#F5FAFF",
-    imageslink: "#F5FAFF",
+    bgwhite: "#F5F5F5",
+    components: "#121B24",
+    fontblack: "#121B24",
+    imageslink: "#466380",
 }
 
 const transformKey = key =>
@@ -33,7 +33,7 @@ const changeColors = (colors) => {
 }
 
 checkbox.addEventListener("change", ({ target }) => {
-    target.checked ? changeColors(darkMode) : changeColors(initialColors)
+    target.checked ? changeColors(lightMode) : changeColors(initialColors)
 })
 
 checkbox.addEventListener('click', () => {
