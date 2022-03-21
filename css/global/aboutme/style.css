@@ -46,10 +46,6 @@
     }
 }
 
-@media only screen and (min-width:2000px) and (max-width: 2385px) {}
-
-@media only screen and (min-width:1750px) and (max-width: 1999px) {}
-
 @media only screen and (min-width:1400px) and (max-width: 1749px) {
     .about-me {
         left: 56vw;
@@ -110,9 +106,6 @@
     }
 }
 
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .about-me svg {
         display: block;
@@ -141,9 +134,6 @@
         color: var(--fontblack);
     }
 }
-
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 
 @media only screen and (max-width: 479px) {
     .about-me svg {
