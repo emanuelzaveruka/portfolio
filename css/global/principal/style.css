@@ -7,6 +7,10 @@
     transition: background-color 500ms;
 }
 
+a {
+    cursor: pointer;
+}
+
 html {
     --bgblack: #121B24;
     --bgwhite: #121B24;
