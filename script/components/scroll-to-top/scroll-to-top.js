@@ -1,4 +1,6 @@
 const footer = document.querySelectorAll('.footer-to-top a[href^="#"]');
+const footerImage = document.querySelectorAll('.footer-to-top svg[href^="#"]');
+
 
 
 function getDistanceFromTop(element) {
@@ -15,6 +17,11 @@ function scrollToSection(event) {
 }
 
 footer.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+
+});
+
+footerImage.forEach((link) => {
     link.addEventListener("click", scrollToSection);
 
 });
