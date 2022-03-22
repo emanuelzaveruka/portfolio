@@ -25,7 +25,8 @@
 .portfolio-container {
     display: flex;
     align-items: center;
-    margin-block-end: 155px;
+    margin-block-end: 50px;
+    margin-top: 120px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly
@@ -73,7 +74,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-block-end: 155px;
     }
     .portfolio-child {
         flex-direction: column;
@@ -108,7 +108,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-block-end: 155px;
     }
     .portfolio-child {
         flex-direction: column;
