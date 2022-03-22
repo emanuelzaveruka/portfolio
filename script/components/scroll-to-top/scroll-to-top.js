@@ -1,10 +1,12 @@
 const footer = document.querySelectorAll('.footer-to-top a[href^="#"]');
 const footerImage = document.querySelectorAll('.footer-to-top svg[href^="#"]');
+const footerImagePath = document.querySelectorAll('.footer-to-top path[href^="#"]');
 
 
 
 function getDistanceFromTop(element) {
     const id = element.getAttribute("href");
+
     return document.querySelector(id).offsetTop;
 
 }
@@ -12,7 +14,6 @@ function getDistanceFromTop(element) {
 function scrollToSection(event) {
     event.preventDefault();
     const distanceFromTop = getDistanceFromTop(event.target) - 10;
-    console.log(distanceFromTop);
     smoothScrollTo(0, distanceFromTop, 600);
 }
 
@@ -22,6 +23,11 @@ footer.forEach((link) => {
 });
 
 footerImage.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+
+});
+
+footerImagePath.forEach((link) => {
     link.addEventListener("click", scrollToSection);
 
 });
