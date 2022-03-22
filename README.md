@@ -19,7 +19,7 @@ Portfólio criado em layout de página única, utilizando:
 * Ícones feitos por mim e pela comunidade Figma;
 * Animações e estilização com _CSS3_ 🎞️;
 * Interface adaptada para dispositivos mobile 📱;
-* Interface dark <3
+* modo dark <3
 
 <br>
 <p align="left">
